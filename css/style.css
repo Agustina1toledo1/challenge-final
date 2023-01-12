@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background:radial-gradient(90.73% 90.73% at 92% 94.44%, #9eabb5c7 0%, rgba(219, 216, 230, 0.642) 100%);
+    /*background-image: url(../img/bgentrada.png);*/
+}
+header{
+    padding: 10px;
+}
+/* letra a
+.logo{
+    color:darkblue;
+    font-size: 70px;
+    font-weight: bold;;
+    font-family: 'Assistant', sans-serif;
+}*/
+.logo{
+    margin: 10px 0;
+}
+.logo img{
+    width: 31px;
+}
+.centrado{
+    width: 95%;
+    margin: 0 auto;/*centrar*/
+}
+.centrado hr{
+    border: none;
+    border-bottom: 1px solid silver;
+}
+
+main .centrado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    /*background: #5560bf;*/
+    
+}
+.entrada{
+    width: 60%;
+}
+
+.texto-entrada{
+    
+    background-image: url(../img/bgentrada.png);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 75vh;
+    border-radius: 50px;
+    box-shadow: 0px 24px 32px -8px rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin-top: 0;
+}
+.contenido{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    right: 5%;
+    bottom: 1%;
+    width: auto;
+    height: auto;
+}
+.texto-entrada-contenido, .texto-salida-contenido  {
+    width: 100%;
+    height: 55vh;
+    background: none;
+    border: 0;
+    color: #FFF;
+    font-size: 32px;
+    resize: none;
+}
+.texto-entrada-contenido::placeholder{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+.texto-entrada-contenido:focus{
+    outline: none;
+}
+
+.centrado-botones{
+    /*position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);*/
+    width: 100%;
+    text-align: center;
+    /*;
+    background: #5560bf;*/
+}
+.boton-encriptar, .boton-desencriptar, .boton-copiar{
+    color: #FFF;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 220px;
+    margin: auto 15px; 
+    border-radius: 30px;
+    background: none;
+    border: 2px solid #FFF;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+     
+}
+.reglas{
+    /*margin: 10px 0;
+    padding: 15px;*/
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.texto-salida{ 
+    width: 38%;
+    height: 75vh;
+    background: linear-gradient(215.24deg, #133081 10.5%, #133081 32.13%, rgba(19, 48, 129, 0.96) 58%, rgba(19, 48, 129, 0.87) 91.87%);
+    border-radius: 50px;
+    /*border-radius: 50px 50px 100px 50px; top-left | top-right | bottom-right | bottom-left */
+    box-shadow: 0px 24px 32px -8px rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin-left: auto;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+/*p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    white-space: initial;
+}*/
+.salida{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    right: 5%;
+    bottom: 1%;
+    width: auto;
+    height: auto;
+}
+.texto-salida-contenido  {
+    /*width: 100%;
+    height: 55vh;
+    background: none;
+    border: none;
+    color: #FFF;*/
+    font-size: 24px;
+    
+}
+/*.btn{
+    width: 100%;
+    text-align: center;
+}
+.boton-copiar{
+    /*position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);*/
+    /*border: none;
+    min-width: 240px;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    /*background: url("../img/Rectangle\ 13.png");*/
+    /*background: none;
+    border: 2px solid #FFF;
+    background-size: 100% 100%;
+    padding: 15px 15px;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+}*/
+
+/*footer{
+    background: #000;
+}*/
+
+
+footer .centrado {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 10px 0;
+}
+.copy {
+    background: #c7c8cc;
+    padding: 10px;
+    width: max-content;
+    padding: 20px 20px;
+    color: rgb(37, 8, 103);
+    opacity: 0.5;
+    font-size: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 15px 0 0 15px;/* top-left | top-right | bottom-right | bottom-left */
+}
+@media screen and (max-width:607px){
+    
+    
+    .entrada, .texto-salida{
+        width: 100%;
+    }
+    /*.texto-salida{
+        margin-top: 10vh;
+    }*/
+    .texto-entrada-contenido{
+        height: 45vh;
+    }
+    .boton-encriptar, .boton-desencriptar, .boton-copiar{
+        
+        margin-bottom: 20px;
+    }
+    
+}
+@media  (max-width:768px) and (min-width:608px){
+    .entrada, .texto-salida{
+        width: 100%;
+    }
+    .texto-entrada-contenido{
+        height: 55vh;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        margin-bottom: 20px;
+    }
+
+}
+@media  (max-width:1002px) and (min-width:769px){
+    .texto-entrada-contenido{
+        height: 45vh;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        
+        margin-bottom: 20px;
+    }
+}
